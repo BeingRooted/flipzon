@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- font osm -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning ms-">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <i class="fa-solid fa-bag-shopping fa-flip m-3"
+                    style=" color: #ff6600;" ></i>Flipzon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            New Arrivals
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">E-Gadgets</a></li>
+                            <li><a class="dropdown-item" href="#">Clothings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Checkout More</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            SmartPhone
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Samaung</a></li>
+                            <li><a class="dropdown-item" href="#">Apple</a></li>
+                            <li><a class="dropdown-item" href="#">Sony</a></li>
+                            <li><a class="dropdown-item" href="#">Nothing</a></li>
+                            <li><a class="dropdown-item" href="#">RealMe</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Checkout More</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link text-success " href="">Small-Trillion SALES from 12th oct to 22nd 🎉</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success bg-success text-white" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Day1/PC_Header_event_unrec_en.jpg" class="d-block w-100  " alt="...">
+      </div>
+
+
+    <!-- banner -->
+    <div id="carouselExampleCaptions" class="carousel slide ms- bg-black" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.samsung.com/is/image/samsung/assets/in/home/Z-Flip5_1440x640.jpg?imwidth=2560  "
+                    class="d-block w-100" style="height: 600px;" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-dark">Galaxy Z Flip5</h5>
+                    <p class="text-dark "> Your couch, your demo!
+                        Experience the latest Galaxy device with a fun video demo.</p>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <video playsinline="playsinline" autoplay pause loop muted class=" " width="100%" height="600px">
+                    <source src="./images/galaxy-s23-ultra-highlights-design.webm" type="video/mp4">
+                </video>
+                <!-- <img src="https://images.samsung.com/is/image/samsung/assets/in/QA75QN90CAKXXL_1440x640.jpg?imwidth=1366" class="d-block w-100" style="height: 600px;"  alt="..."> -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-primary">SAMSUNG GALAXY S Series</h5>
+                    <p class="text-info">(Specal Edition) from 1760000/- onwards.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://gumlet.assettype.com/bloombergquint/2023-09/b4011856-e8d7-43af-a290-196ebdb596f6/_1x_1.jpg?format=webp&w=1200"
+                    class="d-block w-100 " style="height: 600px;" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-warning">The new Apple Series 9</h5>
+                    <p class="text-light">Watch includes gesture control, double the brightness and integration with the
+                        HomePod.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <br><br>
+    <!-- content -->
+    <div class="row mt-3 ms-3">
+        <div class="col-3">
+            <div class="card mb-3 " style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone15pro-digitalmat-gallery-3-202309?wid=364&hei=333&fmt=png-alpha&.v=1693081542150"
+                            style="height: 200px;" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">iphone 15 pro & promax</h5>
+                            <p class="card-text">From ₹21483.00/mo.Per Month with instant savings and No Cost EMI or
+                                ₹134900.00.</p>
+                            <a href="#" class="btn btn-primary bg-warning">Add to cart</a>
+                            <a href="#" class="btn btn-primary bg-success">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-3">
+            <div class="card mb-3 " style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone15-digitalmat-gallery-1-202309_GEO_EMEA?wid=364&hei=333&fmt=png-alpha&.v=1693346853438"
+                            style="height: 200px;" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 15 & iphone 15 Plus</h5>
+                            <p class="card-text">From ₹14150.00/mo.Per Month with instant savings and No Cost EMI or
+                                ₹89900.00.</p>
+                            <a href="#" class="btn btn-primary bg-warning">Add to cart</a>
+                            <a href="#" class="btn btn-primary bg-success">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="col-3">
+            <div class="card mb-3 " style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp14-spacegray-select-202301?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1671304673229"
+                            style="height: 200px;" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">MacBook Pro</h5>
+                            <p class="card-text">12-Core CPU
+                                30-Core GPU 32GB Unified Memory 1TB SSD From ₹50317.00/mo.Per Month with instasavings
+                                and No Cost EMI
+                                or ₹309900.00.</p>
+                            <a href="#" class="btn btn-primary bg-warning">Add to cart</a>
+                            <a href="#" class="btn btn-primary bg-success">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="col-3">
+            <div class="card mb-3 " style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/watch-s9-digitalmat-gallery-5-202309?wid=364&hei=333&fmt=png-alpha&.v=1692847847527"
+                            style="height: 200px; margin-top: 20px;" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Apple Watch Series 9</h5>
+                            <p class="card-text">From ₹6567.00/mo.Per Month with instant savings and No Cost EMI or
+                                ₹41900.00. flexible way to pay with No Cost EMI.</p>
+                            <a href="#" class="btn btn-primary bg-warning">Add to cart</a>
+                            <a href="#" class="btn btn-primary bg-success">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/Screenshot 2023-10-13 031928.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item active">
+                <img src="./images/Screenshot 2023-10-13 032439.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="row mt-3 ms-3">
+        <div class="col-3">
+            <div class="card mb-3 " style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://images.samsung.com/is/image/samsung/assets/in/2307/pcd/Watch_PCD_WatchNew_Watch6Classic_pc.png?$376_376_PNG$"
+                            style="height: 200px;" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                New Galaxy Watch6 Classic</h5>
+                            <p class="card-text">From ₹1063.14/mo for 24 mos at 15% Interest or ₹ 32999.00
+                                Original Price:₹ 36999.00 Save ₹4000.00.</p>
+                            <a href="#" class="btn btn-primary bg-warning">Add to cart</a>
+                            <a href="#" class="btn btn-primary bg-success">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-3">
+            <div class="card mb-3 " style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://m.media-amazon.com/images/I/61j99uUfXNL._SL1500_.jpg" style="height: 200px;"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"> <a href="#s23" style=" color: black; text-decoration: none;">Samsung
+                                    Galaxy S23 Ultra 5G</a>
+                            </h5>
+                            <p class="card-text">-19% ₹1,21,999
+                                .No Cost EMI available on Amazon Pay Later. <a href="">Check eligibility here.</a></p>
+                            <a href="#" class="btn btn-primary bg-warning">Add to cart</a>
+                            <a href="#" class="btn btn-primary bg-success">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="col-3">
+            <div class="card mb-3 " style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://m.media-amazon.com/images/I/71U+YdsvMPL._SL1500_.jpg" style="height: 200px;"
+                            class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Galaxy Z Flip5 (Special Edition)</h5>
+                            <p class="card-text">-3% ₹99,999/-.Add Flat INR 7000 Instant Discount on SBI Credit CardTxn.
+                                Minimum purchase value INR 20000.</p>
+                            <a href="#" class="btn btn-primary bg-warning">Add to cart</a>
+                            <a href="#" class="btn btn-primary bg-success">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="col-3">
+            <div class="card mb-3 " style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://images.samsung.com/in/smartphones/galaxy-z-fold5/images/galaxy-z-fold5-highlights-exclusive-blue.jpg?imbypass=true"
+                            style="height: 200px; margin-top: 20px; margin-left: 10px" class="img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Galaxy Z Fold5 (Special Edition)</h5>
+                            <p class="card-text">-3% ₹1,54,999/-Upto ₹12,637.51 EMI interest savings on select Credit
+                                Cards .</p>
+                            <a href="#" class="btn btn-primary bg-warning">Add to cart</a>
+                            <a href="#" class="btn btn-primary bg-success">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide ms-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/Screenshot 2023-10-13 031130.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/Screenshot 2023-10-13 030743.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/Screenshot 2023-10-13 031628.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex;">
+        <video playsinline="playsinline" autoplay pause muted class=" ms-4 me-4 mt-3" style="height: 529px;" id="s23">
+            <source src="./images/7c2b4131-2b78-48b7-8332-ed4a79eb30fc.mp4" type="video/mp4">
+        </video>
+        <div id="carouselExampleSlidesOnly" class="carousel slide ms-0 mt-3 me-1" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video playsinline="playsinline" autoplay pause loop muted class=" ms-4" style="height: 529px;">
+                        <source src="./images/galaxy-z-flip5-highlights-overview-design.webm" type="video/mp4">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/galaxy-z-flip5-highlights-overview-battery.jpg" class="d-block w-100"
+                        style="height: 529px;" alt=" ...">
+                </div>
+                <div class="carousel-item">
+                    <video playsinline="playsinline" autoplay pause loop muted class=" ms-4 me-4 mt-3"
+                        style="height: 529px; ">
+                        <source src="./images/galaxy-z-flip5-highlights-overview-flex-mode.webm" type="video/mp4">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/galaxy-z-flip5-highlights-overview-camera.jpg" class="d-block w-100"
+                        style="height: 529px;" alt=" ...">
+                </div>
+                <div class="carousel-item">
+                    <video playsinline="playsinline" autoplay pause loop muted class=" ms-4 me-4 mt-3"
+                        style="height: 529px;">
+                        <source src="./images/galaxy-z-flip5-highlights-overview-flex-window.webm" type="video/mp4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+          <div>
+            <img src="./images/Screenshot 2023-10-13 051855.png" class="d-block w-100" alt="...">
+          </div>
+
+
+
+
+
+    <div class="row mt-5 ms-5">
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/41FurpPJu1L._AC_UF226,226_FMjpg_.jpg" class="card-img-top" height="222px" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Up to 38% off
+                    Great Indian Festival
+                    High Performance Intel Core i5 and I7 Laptops.</p>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/51uVckL1jRL._AC_UF226,226_FMjpg_.jpg" class="card-img-top"  height="222px" alt="...">
+                <div class="card-body">
+                  <p class="card-text">up to 67% off
+                    Good Indian Festival
+                    Bring home stadium experience this Diwali.</p>
+                </div>
+              </div>
+        </div>
+
+
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/41cahbke2QL._AC_UF226,226_FMjpg_.jpg" class="card-img-top" height="222px" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Up to 35% off
+                    Great Indian Festival
+                    Premium tablets at affordable prices.</p>
+                </div>
+              </div>
+        </div>
+
+
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/51UHoxzInpL._AC_UF226,226_FMjpg_.jpg" class="card-img-top" height="222px" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Up to 24% off
+                    Great Indian Festival
+                    DSLR & ML Cameras from Sony, Canon & Nikon upto 24 M NCEMI.</p>
+                </div>
+              </div>
+        </div>
+
+
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/31C-On2VUxL._AC_UF226,226_FMjpg_.jpg" class="card-img-top" height="222px" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Up to 56% off
+                    Great Indian Festival
+                    Alexa & Fire TV Stick starting INR 1799.</p>
+                </div>
+              </div>
+        </div>
+
+
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/21pGfX7r8oL._AC_UF226,226_FMjpg_.jpg" class="card-img-top" height="222px" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Up to 56% off
+                    Great Indian Festival
+                    Sony headphones & Speakers: Upto Rs 10000 Cashback.</p>
+                </div>
+              </div>
+        </div>
+
+
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/31Y7uI4Uw9L._AC_UF226,226_FMjpg_.jpg" class="card-img-top" height="222px" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Up to 66% off
+                    Great Indian Festival
+                    Top Offers on Mice and Keyboard.</p>
+                </div>
+              </div>
+        </div>
+
+
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/41Gt21tmhTL._AC_UF226,226_FMjpg_.jpg" class="card-img-top" height="222px" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Up to 79% off
+                    Great Indian Festival
+                    Top Offers of Gaming accessories.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted ">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-info">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block ">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="bg-warning " style="padding-top: 5PX;">
+      <div class="container text-center text-md-start mt-5 ">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>Flipzone
+            </h6>
+            <p>
+              Thankyou for shopping with us hope you are satisfieed with our service and if not please provide your valuble feedback <input type="text" name="" id="" placeholder="here">
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Get to Know us
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">About Us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Careers</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Press Releases</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Flipzone science</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Make Money With Us
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Sell On Flipzon</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">protect and build your Brands</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Become An Affiliate</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Advertise Your Products</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> KERALA, IND 678687, INDIA</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              Flipzon@ekart.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 91 933 557 88</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> + 91 944 558 99</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://flipzon.com/">Flipzon.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</body>
+
+</html>
